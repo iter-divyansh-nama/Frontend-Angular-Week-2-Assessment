@@ -1,0 +1,27 @@
+<div class="form-panel">
+  <h2 class="form-title">Add User</h2>
+
+  <form [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+    <div>
+      <label class="field-label">Name </label>
+      <input class="field-input" formControlName="name" />
+    </div>
+
+    <div>
+      <label class="field-label">Email </label>
+      <input class="field-input" formControlName="email" />
+    </div>
+
+    <div>
+      <label class="field-label">Password </label>
+      <input type="password" class="field-input" formControlName="password" />
+    </div>
+
+    <div>
+      <label class="field-label">Avatar URL </label>
+      <input class="field-input" formControlName="avatar" />
+    </div>
+
+    <button class="submit-btn">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+<div class="form-box">
+  <h2>User Details </h2>
+
+  <form [formGroup]="userForm" (ngSubmit)="handleSubmit()">
+   <input type="text" placeholder="Name" formControlName="name"><br><br>
+    <input type="email" placeholder="Email" formControlName="email"><br><br>
+    <input type="password" placeholder="Password" formControlName="password"><br><br>
+    <input type="text" placeholder="Avatar URL" formControlName="avatar"><br><br>
+
+    <button type="submit">LOGIN</button>
+  </form>
+</div>

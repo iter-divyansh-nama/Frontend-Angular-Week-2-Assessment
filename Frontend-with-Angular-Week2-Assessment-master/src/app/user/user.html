@@ -1,0 +1,12 @@
+
+<div class="grid">
+  <div class="card" *ngFor="let user of users">
+    
+    <!-- PROPERTY BINDING -->
+    <img [src]="user.avatar" alt="user">
+
+    <h4>{{ user.name }}</h4>
+    <p>{{ user.email }}</p>
+
+  </div>
+</div>
